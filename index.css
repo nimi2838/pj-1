@@ -1,0 +1,263 @@
+@font-face {
+    font-family: 'NEXON Lv2 Gothic';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/NEXON Lv2 Gothic.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+body,
+ul,
+li {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    font-family: 'NEXON Lv2 Gothic', sans-serif;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+/* lib */
+
+.border-red {
+    border: 10px solid red;
+}
+
+.flex {
+    display: flex;
+}
+
+.flex-wrap {
+    flex-wrap: wrap;
+}
+
+.flex-jc-sb {
+    justify-content: space-between;
+}
+
+.flex-ai-c {
+    align-items: center;
+}
+
+.con {
+    margin: 0 auto;
+}
+
+.img-box>img {
+    width: 100%;
+    display: block;
+}
+
+/* cus */
+.con {
+    max-width: 1280px;
+}
+
+
+/* 탑바 */
+
+.top-bar-wrap {
+    position: relative;
+}
+
+.top-bar-wrap>.top-bar {
+    width: 100%;
+    padding: 20px 30px;
+    box-sizing: border-box;
+    color: black;
+}
+
+.top-bar-wrap>.top-bar::after {
+    content: "";
+    width: 100%;
+    height: 100px;
+    background: #c1c1c1;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+.top-bar-wrap>.top-bar>.menu {
+    margin-top: 20px;
+    font-size: 16px;
+}
+
+.top-bar-wrap>.top-bar>.menu>ul>li>a {
+    padding: 0 5px;
+}
+
+.top-bar-wrap>.top-bar>.logo {
+    width: 160px;
+}
+
+.top-bar-wrap>.top-bar>.member>ul>li>a {
+    padding: 0 5px;
+    font-size: 14px;
+}
+
+.top-bar-wrap>.top-bar>.member>.search-form {
+    position: relative;
+}
+
+.top-bar-wrap>.top-bar>.member>.search-form>input {
+    position: absolute;
+    right: 20px;
+    top: 10px;
+    margin-right: 10px;
+    padding: 5px;
+    display: block;
+    box-sizing: border-box;
+    font-weight: bold;
+}
+
+.top-bar-wrap>.top-bar>.member>.search-form>a {
+    position: absolute;
+    top: 13px;
+    right: 0;
+}
+
+.top-bar-wrap>.top-bar>.member>.search-form>a>img {
+    width: 23px;
+}
+
+@media (max-width:999px) {
+    .top-bar-wrap>.top-bar>.menu {
+        background-image: url("https://nimi2838.github.io/gagu/bhn/img/btn_allmenu.png");
+        width: 50px;
+        height: 30px;
+        background-repeat: no-repeat;
+        background-position: center;
+        background-size: cover;
+    }
+
+    .top-bar-wrap>.top-bar>.menu>ul>li {
+        display: none;
+    }
+
+    .top-bar-wrap>.top-bar>.member>.search-form>a>img {
+        width: 30px;
+        margin-top: 8px;
+    }
+
+    .top-bar-wrap>.top-bar>.member>ul {
+        display: none;
+    }
+
+    .top-bar-wrap>.top-bar>.member>.search-form>input {
+        display: none;
+    }
+}
+
+
+/* 배너 */
+
+.ban-box-1 {
+    width: 100%;
+    height: 450px;
+    background: #c5c5c5;
+}
+
+.ban-box-1>p {
+    text-align: center;
+    font-size: 50px;
+    margin-top: 0;
+    padding-top: 0;
+}
+
+
+/* best */
+
+.prod-list-box-1 {
+    margin-top: 50px;
+}
+
+.prod-list-box-1>h1 {
+    margin-left: 10px;
+    color: #2c2c2c;
+}
+
+.prod-list-box-1>ul {
+    padding: 0 10px;
+}
+
+.prod-list-box-1>ul>li {
+    margin-top: 20px;
+    margin-right: 0;
+}
+
+.prod-list-box-1>ul>li>.img-box>img {
+    background-position: center;
+    background-size: cover;
+}
+
+@media (min-width:1000px) {
+    .prod-list-box-1>ul>li:not(:nth-child(4n)) {
+        margin-right: 10px;
+    }
+
+    .prod-list-box-1>ul>li {
+        width: calc(100% / 4 - (10px * 3 / 4));
+    }
+}
+
+@media (max-width:999px) and (min-width:800px) {
+    .prod-list-box-1>ul>li:not(:nth-child(3n)) {
+        margin-right: 10px;
+    }
+
+    .prod-list-box-1>ul>li {
+        width: calc(100% / 3 - (10px * 2 / 3));
+    }
+}
+
+@media (max-width:799px) and (min-width:600px) {
+    .prod-list-box-1>ul>li:not(:nth-child(2n)) {
+        margin-right: 10px;
+    }
+
+    .prod-list-box-1>ul>li {
+        width: calc(100% / 2 - (10px * 1 / 2));
+    }
+}
+
+@media (max-width:599px) {
+    .prod-list-box-1>ul>li {
+        width: 100%;
+    }
+}
+
+
+/* footer */
+
+.footer-wrap {
+    margin-top: 50px;
+}
+
+.footer-wrap > .footer >.inner-box > ul > li {
+    margin-left: 100px;
+    line-height: 33px;
+}
+
+.footer-wrap > .footer >.inner-box > ul  ul > li span {
+    font-size: 16px;
+    font-weight: 900;
+}
+
+.footer-wrap > .footer >.inner-box > ul ul > li:hover {
+    text-decoration: underline;
+}
+
+.footer-wrap > .footer > .talk > a {
+    border: 1px solid #2c2c2c;
+    width: 100px;
+    height: 50px;
+}
+
+
+.footer-wrap > .footer > .talk > a > .icon {
+    background-image: url("img/iconKakao.svg");
+}
